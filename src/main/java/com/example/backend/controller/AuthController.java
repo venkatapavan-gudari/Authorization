@@ -15,7 +15,7 @@ public class AuthController {
     @Autowired
     private UserService service;
 
-    @GetMapping("/")
+    @GetMapping("/home")
 public String home() {
     return "Backend Running";
 }
