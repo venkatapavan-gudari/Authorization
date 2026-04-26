@@ -8,7 +8,8 @@ import com.example.backend.entity.User;
 import com.example.backend.service.UserService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+// @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+@CrossOrigin(origins = "*")
 public class AuthController {
 
     @Autowired
