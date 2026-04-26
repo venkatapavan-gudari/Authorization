@@ -9,11 +9,16 @@ import com.example.backend.service.UserService;
 
 @RestController
 // @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://authorization-frontend-2y3a.vercel.app")
 public class AuthController {
 
     @Autowired
     private UserService service;
+
+    @GetMapping("/")
+public String home() {
+    return "Backend Running";
+}
 
     @PostMapping("/register")
     public String register(@RequestBody User user) {
